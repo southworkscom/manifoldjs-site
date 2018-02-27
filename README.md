@@ -1,6 +1,6 @@
 # manifoldjs
 
-Node/Ember site promoting ManifoldJS tool to build manifest files
+Node/Vue/Nuxt site promoting ManifoldJS tool to build manifest files
 
 ## Prerequisites
 
@@ -8,42 +8,46 @@ You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+* [NPM](http://npmjs.com/)
 
 ## Installation
 
 * `git clone <repository-url>` this repository
 * change into the new directory
 * `npm install`
-* `bower install`
 
 ## Running / Development
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
+* `npm run dev`
+* Visit your app at [http://localhost:3000](http://localhost:3000).
 
 ### Running Tests
 
-* `ember test`
-* `ember test --server`
+* `npm test`
+
+### Running Test Coverage
+
+* `npm run cover`
+
+### Running Test Coverage
+
+* `npm install selenium-standalone@latest -g` _only once_
+* `selenium-standalone install` _only once_
+* `npm run e2e`
+
+> You need to have installed [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ### Building
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+* `npm run build` (production)
+
+### Serve
+
+* `npm start` (doesn't compile the code)
 
 ## Further Reading / Useful Links
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+* [Vuejs](https://vuejs.org/)
+* [Vuex](https://vuex.vuejs.org/en/)
+* [Nuxtjs](https://nuxtjs.org/)
 
