@@ -1,8 +1,8 @@
 <template>
   <section id='section'>
     <WindowsMenu />
-    <div class='spinner-container' id="containerSpinner" style='background-color: rgba(43, 43, 43, 0.7); display: none;'>
-      <div class="lds-ring" id='loadingSpinner' style="display: none;"><div></div><div></div><div></div><div></div></div>
+    <div class='spinner-container' id="containerSpinner" :style="{ display: spinnerDisplay }">
+      <div class="lds-ring" id='loadingSpinner' :style="{ display: spinnerDisplay }"><div></div><div></div><div></div><div></div></div>
     </div>
     <div class="l-generator-step" id='content'>
       <div class="l-generator-semipadded pure-g">
@@ -67,22 +67,19 @@ export default class extends Vue {
   viewerSize = '50rem';
   sampleSize = '55rem';
 
-  spinner: any;
-  containerSpinner: any;
   containerCode: any;
   radioBtnList: String = '';
   
   selectedSample$: windowsStore.Sample | null = null;
   sampleFilter: windowsStore.Sample[];
   samplesTextFilter: any = '';
+  spinnerDisplay = 'none';
   @WindowsState samples: windowsStore.Sample[];
 
   @WindowsAction getSamples;
   @WindowsAction selectSample;
 
   async mounted() {
-    this.spinner = document.getElementById('loadingSpinner');
-    this.containerSpinner = document.getElementById('containerSpinner');
     this.showLoadingSpinner(true);
     await this.getSamples();
     this.changeRBListSize();
@@ -104,13 +101,10 @@ export default class extends Vue {
   }
 
   showLoadingSpinner(show: boolean) {
-    
     if (show) {
-      this.spinner.style.display = 'block';
-      this.containerSpinner.style.display = 'block';
+      this.spinnerDisplay = 'block';
     } else {
-      this.spinner.style.display = 'none';
-      this.containerSpinner.style.display = 'none';
+      this.spinnerDisplay = 'none';
     }
   }
 
@@ -201,8 +195,10 @@ export default class extends Vue {
 }
 
 #containerSpinner {
+  background-color: rgba(43, 43, 43, .7);
   height: 100vh;
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100vw;
   z-index: 1;
 }
