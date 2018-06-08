@@ -2,7 +2,23 @@
 
 # __PWA-Builder__
 
-Node/Vue/Nuxt site promoting ManifoldJS tool to build manifest files
+PWA-Builder is a tool that helps you with the manifest, images and service worker for your site. 
+
+## __Table of Contents__
+* Prerequisites
+* Installation
+* Running / Development
+  * Running Tests
+  * Running Test Coverage
+  * Running Test Coverage (Java JDK needed)
+  * Building
+  * Serve
+* Table of Tools
+* How to use?
+  * Windows API (Beta)
+  * PWA Image Generator
+  * Service Worker Generator
+* Further reading / Useful links
 
 ## Prerequisites
 
@@ -47,7 +63,7 @@ You will need the following things properly installed on your computer.
 
 * `npm start` (doesn't compile the code)
 
-# __Tools__
+## __Table of Tools__
 
 |  **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tool&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** | **Description** |
 | ----------------- | --------------- |
@@ -56,12 +72,15 @@ You will need the following things properly installed on your computer.
 | <a href="README.md#serviceworker">Service Worker</a>    | Generates the service workers for your app.   |
 
 
+## __How to use?__
+
+
 <div id="windowsapi"/>
 
 
 ## __Windows API (Beta)__
 
-This tool allow us to add differents features to our app. When a feature is selected the site generates the necesary code showing the properties and how use them, also allow us to copy the code or download it.
+This tool allows to add differents features to our app. When a feature is selected the site generates the necesary code showing the properties and how set them, also allows copy the code or download it.
 
 The steps to follow are:
 
@@ -76,7 +95,7 @@ The steps to follow are:
 
 ## __PWA Image Generator__
 
-To use this feature you just to select an image then set the padding value and the background color or if you prefer you can choose transparent background, after that select the platforms where your app will run and finally click the download button. This process will generate a .zip file that it will be contains all necessary images for your app.
+To use this feature you have to select an image from your device, then set the padding value and the background color or , if you prefer, you can choose transparent background, after that select the platforms where your app will run and finally click the download button. This process will generate a .zip file that it will be contains all necessary images for your app.
 
 ![Picture](Readme-Files/ImageGeneratorReview.gif)
 
@@ -97,4 +116,5 @@ If you need information about Service Worker take a minute to read this page - [
 * [Vuejs](https://vuejs.org/)
 * [Vuex](https://vuex.vuejs.org/en/)
 * [Nuxtjs](https://nuxtjs.org/)
-
+* [Using Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
+* [PWA-Builder Documentation](https://docs.pwabuilder.com/)
