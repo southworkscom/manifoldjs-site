@@ -45,6 +45,37 @@ You will need the following things properly installed on your computer.
 
 * `npm start` (doesn't compile the code)
 
+# Tools
+
+## Windows API (Beta)
+
+This tool allow us to add differents features to our app. When a feature is selected the site generates the necesary code showing the properties and how use them, also allow us to copy the code or download it.
+
+The steps to follow are:
+
+* Enter to Windows API site from menu tab.
+* Search/Select the feature.
+* Copy or download the code.
+
+![Picture](Readme-Files/WindowsApiReview.gif)
+
+
+
+## PWA Image Generator
+
+To use this feature you just to select an image then set the padding value and the background color or if you prefer you can choose transparent background, after that select the platforms where your app will run and finally click the download button. This process will generate a .zip file that it will be contains all necessary images for your app.
+
+![Picture](Readme-Files/ImageGeneratorReview.gif)
+
+
+## Service Worker Generator
+
+This feature generates the selected service worker ready to be included in the proyect by copying or downloading it from the site. 
+If you need information about Service Worker take a minute to read this page - [Using Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers) -
+
+![Picture](Readme-Files/ServiceWorkerReview.gif)
+
+
 ## Further Reading / Useful Links
 
 * [Vuejs](https://vuejs.org/)
