@@ -40,7 +40,7 @@ export const helpers = {
                 const host = pathArray[2];
                 baseUrl = protocol + '//' + host; 
                 //remove posible trailing/leading slashes
-                icon.src = `${baseUrl.replace(/\/$/, '')}/${icon.src.replace(/^\/+/g, '')}`;
+                icon.src = `${icon.src.replace(/^\/+/g, '')}`;
             }
 
             return icon;
