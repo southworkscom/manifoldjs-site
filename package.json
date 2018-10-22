@@ -10,7 +10,8 @@
     "test": "mocha --opts mocha.opts",
     "pree2e": "npm run build",
     "e2e": "concurrently \"npm start\" \"selenium-standalone start\" \"wait-on http://localhost:4444 && wait-on http://localhost:3000 && cross-env NODE_ENV=development nightwatch --config nightwatch.js\" --names \"📦,⚙️,🦉\" --prefix name --kill-others",
-    "cover": "nyc npm test && opener ./.coverage/index.html"
+    "cover": "nyc npm test && opener ./.coverage/index.html",
+    "setup": "npm install && npm-install-peers"
   },
   "dependencies": {
     "@nuxtjs/axios": "^4.5.2",
@@ -20,6 +21,7 @@
     "manup": "^1.0.1",
     "normalize-scss": "^7.0.0",
     "npm": "^6.0.1",
+    "npm-install-peers": "^1.2.1",
     "nuxt": "1.1.1",
     "nuxt-class-component": "^1.1.3",
     "prismjs": "^1.9.0",
